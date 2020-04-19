@@ -10,6 +10,9 @@ services:
     environment:
       TZ: JST
       DJANGO_SETTINGS_MODULE: res_system.settings_prod
+    networks:
+      app_net:
+        ipv4_address: 172.30.0.30
   db:
     build: ./db
     volumes:
@@ -22,3 +25,14 @@ services:
       MYSQL_USER: worker
       MYSQL_PASSWORD: worker
       TZ: 'Asia/Tokyo'
+    networks:
+      app_net:
+        ipv4_address: 172.30.0.31
+
+networks:
+  app_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.30.0.0/24
