@@ -21,7 +21,7 @@ services:
       - "3306:3306"
     environment:
       MYSQL_DATABASE: res_system
-      MYSQL_ROOT_PASSWORD: Password
+      MYSQL_ROOT_PASSWORD: BVvL$Fv/q1a8
       MYSQL_USER: worker
       MYSQL_PASSWORD: worker
       TZ: 'Asia/Tokyo'
