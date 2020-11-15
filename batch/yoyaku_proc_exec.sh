@@ -21,7 +21,7 @@ fi
 echo $targetdate >> $LOGDIR
 
 # MySQLをバッチモードで実行するコマンド
-CMD_MYSQL="mysql -h 127.0.0.1 -u root -pPassword res_system" >> $LOGDIR
+CMD_MYSQL="mysql -h 127.0.0.1 -u root -p'gf!$eeP58/_UQv%bgxSiRq,C' res_system" >> $LOGDIR
 
 
 # INSERT文を直接実行

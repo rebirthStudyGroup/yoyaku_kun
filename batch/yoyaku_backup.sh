@@ -15,7 +15,7 @@ mkdir -p $DIR/dump
 
 
 # MySQLをバッチモードで実行するコマンド
-mysqldump -h 127.0.0.1 -u root -pPassword --default-character-set=binary --routines res_system | gzip > $DIR/dump/yoyaku_dump_sql_${NOWDATETIME}.gz
+mysqldump -h 127.0.0.1 -u root -p'gf!$eeP58/_UQv%bgxSiRq,C' --default-character-set=binary --routines res_system | gzip > $DIR/dump/yoyaku_dump_sql_${NOWDATETIME}.gz
 
 echo $DIR/dump/yoyaku_dump_sql_${NOWDATETIME}.gz >> $LOGDIR
 echo "バックアップ終了" >> $LOGDIR

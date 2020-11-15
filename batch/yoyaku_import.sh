@@ -20,8 +20,8 @@ fi
 echo $targetfile >> $LOGDIR
 
 
-echo "zcat ${targetfile} | mysql -h 127.0.0.1 -u root -pPassword res_system" >> $LOGDIR
-zcat ${targetfile} | mysql -h 127.0.0.1 -u root -pPassword res_system
+echo "zcat ${targetfile} | mysql -h 127.0.0.1 -u root -p'gf!$eeP58/_UQv%bgxSiRq,C' res_system" >> $LOGDIR
+zcat ${targetfile} | mysql -h 127.0.0.1 -u root -p'gf!$eeP58/_UQv%bgxSiRq,C' res_system
 
 
 
